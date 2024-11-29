@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="sidebar__top">
+      <div class="sidebar__header">
+        <div class="logo__container">
+          <img src="logo...png" alt="" />
+        </div>
+        <h2 class="sidebar__title accent__text">ClassRoom</h2>
+      </div>
+      <div class="center__align">
+        <a class="create__new" href="#">+ Add New</a>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <a href="#">
+            <li class="navigation__item">
+              <i class="fa-solid fa-sliders"></i>Dashboard
+            </li>
+          </a>
+          <a href="#">
+            <li class="navigation__item">
+              <i class="fa-solid fa-calendar-day"></i>Incoming Lesson
+            </li>
+          </a>
+          <a href="#">
+            <li class="navigation__item">
+              <i class="fa-solid fa-user-group"></i>Groups
+            </li>
+          </a>
+          <a href="#">
+            <li class="navigation__item">
+              <i class="fa-solid fa-book-open"></i>Materials
+            </li>
+          </a>
+          <a href="#">
+            <li class="navigation__item">
+              <i class="fa-solid fa-graduation-cap"></i>Semester
+            </li>
+          </a>
+          <a href="#">
+            <li class="navigation__item">
+              <i class="fa-solid fa-envelope"></i>Inbox
+              <div class="notification__count">10</div>
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="profile__section">
+      <div class="profile__details">
+        <div class="avatar__container">
+          <div class="avatar">
+            <img src="Priya.jpg" alt="" />
+          </div>
+        </div>
+        <div class="user__info">
+          <h3 style="color: aliceblue;" class="user__name">Priyanka Paul</h3>
+          <p class="user__role">Admin</p>
+        </div>
+      </div>
+      <a class="signout" href="#logout">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>Logout
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Body -->
+  <div class="body__part__container">
+    <div class="body__part body__header">
+      <h1 class="page__title">Dashboard</h1>
+    </div>
+    <div class="body__part body__search">
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" name="search" id="search">
+      </div>
+      <div class="notification">
+        <i class="fa-solid fa-bell"></i>
+        <div class="notification__badge"></div>
+      </div>
+    </div>
+    <div class="body__part body__incoming__lesson">
+      <div class="incomming_lesson_header">
+        <h3 class="class_title">Incomming Lesson</h3>
+        <div class="incomming_lesson_buttons">
+          <a class="button__link" href="#">Show all</a>
+          <button class="button__link"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        </div>
+      </div>
+      <h4 class="day">Monday</h4>
+      <a href="#">
+        <div class="incomming__lesson">
+          <div class="lesson__details">
+            <div class="icon"><i class="fa-solid fa-calendar-plus"></i></div>
+            <div class="schedule">
+              <h4 class="time">9:00 PM - 10:30PM</h4>
+              <p class="course">Python - 22th Batch</p>
+            </div>
+          </div>
+          <h4 class="lesson upcoming"><i class="fa-solid fa-circle fa-2xs"></i>&nbsp Lesson 25</h4>
+          <p class="media">Online Classes <span class="primary__txt">Zoom</span></p>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </a>
+      <a href="#">
+        <div class="incomming__lesson">
+          <div class="lesson__details">
+            <div class="icon"><i class="fa-solid fa-calendar-plus"></i></div>
+            <div class="schedule">
+              <h4 class="time">7:00 PM - 8:30PM</h4>
+              <p class="course">Next js - 20th Batch</p>
+            </div>
+          </div>
+          <h4 class="lesson"><i class="fa-solid fa-circle fa-2xs"></i>&nbsp Lesson 30</h4>
+          <p class="media">Online Classes <span class="primary__txt">Zoom</span></p>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </a>
+      <h4 class="day">Tuesday</h4>
+      <a href="#">
+        <div class="incomming__lesson">
+          <div class="lesson__details">
+            <div class="icon"><i class="fa-solid fa-calendar-plus"></i></div>
+            <div class="schedule">
+              <h4 class="time">6:00 PM - 7:30PM</h4>
+              <p class="course">Machine Learning - 18th Batch</p>
+            </div>
+          </div>
+          <h4 class="lesson"><i class="fa-solid fa-circle fa-2xs"></i>&nbsp Lesson 28</h4>
+          <p class="media">Online Classes <span class="primary__txt">Zoom</span></p>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+    </div></a>
+    <div class="body__part body__materials">
+      <h3>Materials</h3>
+      <div class="card__container">
+        <div class="card">
+          <h2 class="card__title">Exploratory Data Analysis</h2>
+          <p>Description</p>
+          <img
+            src="D1.jpg"
+            alt="">
+        </div>
+        <div class="card">
+          <h2 class="card__title">Feature Engineering Analysis</h2>
+          <p>Description</p>
+          <img src="D2.avif" alt="">
+        </div>
+        <div class="card">
+          <h2 class="card__title">Model Evaluation Analysis</h2>
+          <p>Description</p>
+          <img src="D3.avif" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="body__part body__groups">
+      <div class="body__groups__header">
+        <h3>Groups</h3>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+      <div class="group__container">
+        <!-- --------------------------Single Group  ---------------------------------->
+        <div class="group">
+          <div class="group__image"><img src="F1.jpg" alt=""></div>
+          <div class="group__info__click">
+            <div class="group__info">
+              <h3>Classificaton</h3>
+              <p class="group__student__count">No of Student 100</p>
+            </div>
+            <i class="fa-solid fa-angle-down group__right__arow"></i>
+          </div>
+        </div>
+        <!-- Single Group End  -->
+        <div class="group__full__box group__clicked">
+          <div class="group">
+            <div class="group__image"><img src="F3.png" alt=""></div>
+            <div class="group__info__click">
+              <div class="group__info">
+                <h3>Data Science</h3>
+                <p class="group__student__count">No of Student 60</p>
+              </div>
+              <i class="fa-solid fa-angle-up group__right__arow"></i>
+            </div>
+          </div>
+          <a class="group__properties" href="#">
+            <i class="fa-solid fa-paper-plane"></i>
+            <b>Send Message</b>
+          </a>
+          <a class="group__properties" href="#">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <b>Reschedule Lesson</b>
+          </a>
+          <a class="group__properties" href="#">
+            <i class="fa-solid fa-share-nodes"></i>
+            <b>Share materials</b>
+          </a>
+        </div>
+        <div class="group">
+          <div class="group__image"><img src="F2.jpg" alt=""></div>
+          <div class="group__info__click">
+            <div class="group__info">
+              <h3>Machine Learning</h3>
+              <p class="group__student__count">No of Student 42</p>
+            </div>
+            <i class="fa-solid fa-angle-down group__right__arow"></i>
+          </div>
+        </div>
+        <div class="group">
+          <div class="group__image"><img src="F4.jpg" alt=""></div>
+          <div class="group__info__click">
+            <div class="group__info">
+              <h3>Cyber Security</h3>
+              <p class="group__student__count">No of Student 40</p>
+            </div>
+            <i class="fa-solid fa-angle-down group__right__arow"></i>
+          </div>
+        </div>
+        <div class="new__group">
+          <button class="create__new__group">
+            <i class="fa-solid fa-plus"></i>
+            Create New Group
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="body__part body__semester__progress">
+      <div class="body__groups__header">
+        <h3>Semester progress</h3>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+      <div class="process__container">
+        <div class="semester_progress">
+          <div class="progress purple__bg">
+            <div class="process__icon ">
+              <!-- Icon  -->
+              <i class="fa-solid fa-circle-notch"></i>
+            </div>
+            <div class="details">
+              <p>Lesson Progrss</p>
+              <p class="score">32 <span class="opacity-50">/ 35</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="exam__schedule">
+          <div class="progress">
+            <div class="process__icon ">
+              <!-- Icon  -->
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <div class="details">
+              <p>Semester Exam in</p>
+              <p class="score">20 days</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body__part body__inbox">
+      <div class="body__groups__header">
+        <h3>Inbox</h3>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+      <div class="inbox__container">
+        <!-- Single Chat  -->
+        <div class="single__chat">
+          <div class="chat">
+            <div class="chat__wrapper">
+              <div class="upper__part">
+                <div class="chat__image"><img
+                    src="http://pundrauniversity.ac.bd/_next/image?url=http%3A%2F%2Fapi.pundrauniversity.ac.bd%3A80%2Fassets%2Fimages%2Femployee%2Fnahid-hasan.png&w=640&q=75"
+                    alt=""></div>
+                <div class="user">
+                  <div class="name__time">
+                    <p class="user__name">Nahid Hasan</p>
+                    <p class="time">9:30</p>
+                  </div>
+                  <p class="status ">Online</p>
+                </div>
+              </div>
+              <div class="lower__part">
+                <p class="msg">Lecturer
+                  Pundra University of Science & Technology (2024-Till now)</p>
+              </div>
+            </div>
+            <div class="dot"></div>
+            <div class="reply">
+              <i class="fa-solid fa-paper-plane"></i>
+              <p>Reply</p>
+            </div>
+            <div class="remove__chat">
+              <i class="fa-solid fa-trash-can"></i>
+              <p>Remove</p>
+            </div>
+          </div>
+        </div>
+        <!-- Single Chat End  -->
+        <div class="single__chat">
+          <div class="chat read">
+            <div class="chat__wrapper">
+              <div class="upper__part">
+                <div class="chat__image"><img
+                    src="http://pundrauniversity.ac.bd/_next/image?url=http%3A%2F%2Fapi.pundrauniversity.ac.bd%3A80%2Fassets%2Fimages%2Femployee%2Findraneel-misra.png&w=640&q=75"
+                    alt=""></div>
+                <div class="user">
+                  <div class="name__time">
+                    <p class="user__name">Indraneel Misra</p>
+                    <p class="time">9:00</p>
+                  </div>
+                  <p class="status online">Online</p>
+                </div>
+              </div>
+              <div class="lower__part">
+                <p class="msg">
+                  Asst. Professor
+                  Pundra University of Science & Technology (2024-Till now)</p>
+              </div>
+            </div>
+            <div class="dot"></div>
+            <div class="reply">
+              <i class="fa-solid fa-paper-plane"></i>
+              <p>Reply</p>
+            </div>
+            <div class="remove__chat">
+              <i class="fa-solid fa-trash-can"></i>
+              <p>Remove</p>
+            </div>
+          </div>
+        </div>
+        <div class="single__chat">
+          <div class="chat">
+            <div class="chat__wrapper">
+              <div class="upper__part">
+                <div class="chat__image"><img
+                    src="http://pundrauniversity.ac.bd/_next/image?url=http%3A%2F%2Fapi.pundrauniversity.ac.bd%3A80%2Fassets%2Fimages%2Femployee%2Fmd-palash-tai.png&w=640&q=75"
+                    alt=""></div>
+                <div class="user">
+                  <div class="name__time">
+                    <p class="user__name">Md. Palash Tai</p>
+                    <p class="time">9:30</p>
+                  </div>
+                  <p class="status online">Online</p>
+                </div>
+              </div>
+              <div class="lower__part">
+                <p class="msg">Assistant Professor
+                  Pundra University of Science & Technology (2022-Till now)</p>
+              </div>
+            </div>
+            <div class="dot"></div>
+            <div class="reply">
+              <i class="fa-solid fa-paper-plane"></i>
+              <p>Reply</p>
+            </div>
+            <div class="remove__chat">
+              <i class="fa-solid fa-trash-can"></i>
+              <p>Remove</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
